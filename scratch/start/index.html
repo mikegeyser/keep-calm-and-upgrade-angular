@@ -1,0 +1,27 @@
+<html>
+
+<head>
+    <script src="node_modules/angular/angular.js"></script>
+    <script src="node_modules/angular-route/angular-route.js"></script>
+    <script src="node_modules/angular-resource/angular-resource.js"></script>
+    <script src="app/app.js"></script>
+    <script src="app/home/home.controller.js"></script>
+    <script src="app/edit/edit.controller.js"></script>
+    <script src="app/services/memes.service.js"></script>
+    <script src="app/directives/meme.directive.js"></script>
+
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body ng-app="lotr-meme-generator">
+    <h2>The</h2>
+    <h1>Lord of the Rings</h1>
+    <h2>Meme Generator</h2>
+
+    <hr />
+    <div class="container">
+        <ng-view></ng-view>
+    </div>
+</body>
+
+</html>
