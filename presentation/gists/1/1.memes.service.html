@@ -1,0 +1,47 @@
+<gist>
+	<files>
+		<folder>
+			app
+			<folder>
+				directives
+				<file>meme.directive.js</file>
+			</folder>
+			<folder>
+				edit
+				<file>edit.controller.js</file>
+				<file>edit.template.html</file>
+			</folder>
+			<folder>
+				home
+				<file>home.controller.js</file>
+				<file>home.template.html</file>
+			</folder>
+			<folder>services
+				<file class="selected">memes.service.js</file>
+			</folder>
+			<file>app.js</file>
+		</folder>
+		<file>index.html</file>
+	</files>
+
+	<pre><code data-trim class="javascript">
+angular.module("lotr-meme-generator")
+.service("MemeService", function() {
+		var memes = [{
+				id:"one-does-not-simply",
+				image: "one-does-not-simply.png",
+				top: "One does not simply",
+				bottom: "Upgrade Angular"
+		}, {
+				id: "and-my-axe",
+				image: "and-my-axe.jpg",
+				top: "And my",
+				bottom: "directive!"
+		}, /\* Omitted for brevity \*/ ];
+
+		return {
+			memes: memes
+		};
+});
+    </code></pre>
+</gist>

@@ -1,0 +1,202 @@
+#bbd-logo {
+  position: absolute;
+  bottom: 30px;
+  left: 30px; }
+
+.reveal section.gist {
+  width: 960px;
+  height: 700px; }
+
+.reveal gist {
+  display: block;
+  width: 960px;
+  height: 600px; }
+  .reveal gist files {
+    float: left;
+    padding-top: 20px;
+    width: 230px; }
+    .reveal gist files file {
+      font-size: 1vw;
+      display: block;
+      text-align: left;
+      padding: 0 10px; }
+      .reveal gist files file.selected {
+        font-weight: bold;
+        background-color: #f8f8f8;
+        width: 100%;
+        box-shadow: 0px 0px 6px rgba(0, 0, 0, 0.3); }
+  .reveal gist folder {
+    font-size: 1vw;
+    text-align: left;
+    display: block;
+    padding-left: 20px;
+    margin-bottom: 10px; }
+  .reveal gist pre {
+    float: left;
+    width: 700px;
+    height: 100%; }
+    .reveal gist pre code {
+      height: 550px;
+      max-height: inherit;
+      font-size: 0.9vw;
+      overflow-x: hidden;
+      overflow-wrap: break-word;
+      padding-bottom: 50px; }
+  .reveal gist code strong {
+    z-index: 9999;
+    position: relative; }
+
+.dim.hljs {
+  color: rgba(51, 51, 51, 0.3); }
+
+.dim .hljs-comment,
+.dim .diff .hljs-header {
+  color: rgba(153, 153, 136, 0.3); }
+
+.dim .hljs-keyword,
+.dim .css .rule .hljs-keyword,
+.dim .hljs-winutils,
+.dim .nginx .hljs-title,
+.dim .hljs-subst,
+.dim .hljs-request,
+.dim .hljs-status {
+  color: rgba(51, 51, 51, 0.3); }
+
+.dim .hljs-number,
+.dim .hljs-hexcolor,
+.dim .ruby .hljs-constant {
+  color: rgba(0, 128, 132, 0.3); }
+
+.dim .hljs-string,
+.dim .hljs-tag .hljs-value,
+.dim .hljs-doctag,
+.dim .tex .hljs-formula {
+  color: rgba(221, 17, 68, 0.3); }
+
+.dim .hljs-title,
+.dim .hljs-id,
+.dim .scss .hljs-preprocessor {
+  color: rgba(153, 0, 0, 0.3); }
+
+.dim .hljs-class .hljs-title,
+.dim .hljs-type,
+.dim .vhdl .hljs-literal,
+.dim .tex .hljs-command {
+  color: rgba(68, 85, 136, 0.3); }
+
+.dim .hljs-tag,
+.dim .hljs-tag .hljs-title,
+.dim .hljs-rule .hljs-property,
+.dim .django .hljs-tag .hljs-keyword {
+  color: rgba(0, 0, 128, 0.3); }
+
+.dim .hljs-attribute,
+.dim .hljs-variable,
+.dim .lisp .hljs-body,
+.dim .hljs-name {
+  color: rgba(0, 128, 128, 0.3); }
+
+.dim .hljs-regexp {
+  color: rgba(0, 153, 38, 0.3); }
+
+.dim .hljs-symbol,
+.dim .ruby .hljs-symbol .hljs-string,
+.dim .lisp .hljs-keyword,
+.dim .clojure .hljs-keyword,
+.dim .scheme .hljs-keyword,
+.dim .tex .hljs-special,
+.dim .hljs-prompt {
+  color: rgba(153, 0, 115, 0.3); }
+
+.dim .hljs-built_in {
+  color: rgba(0, 134, 179, 0.3); }
+
+.dim .hljs-preprocessor,
+.dim .hljs-pragma,
+.dim .hljs-pi,
+.dim .hljs-doctype,
+.dim .hljs-shebang,
+.dim .hljs-cdata {
+  color: rgba(153, 153, 153, 0.3); }
+
+.dim .hljs-deletion {
+  background: rgba(255, 221, 221, 0.3); }
+
+.dim .hljs-addition {
+  background: rgba(221, 255, 221, 0.3); }
+
+.dim .diff .hljs-change {
+  background: rgba(0, 134, 179, 0.3); }
+
+.dim .hljs-chunk {
+  color: rgba(170, 170, 170, 0.3); }
+
+.dim strong {
+  color: #333333;
+  font-style: normal; }
+  .dim strong .hljs-comment,
+  .dim strong .diff .hljs-header {
+    color: #999988; }
+  .dim strong .hljs-keyword,
+  .dim strong .css .rule .hljs-keyword,
+  .dim strong .hljs-winutils,
+  .dim strong .nginx .hljs-title,
+  .dim strong .hljs-subst,
+  .dim strong .hljs-request,
+  .dim strong .hljs-status {
+    color: #333333; }
+  .dim strong .hljs-number,
+  .dim strong .hljs-hexcolor,
+  .dim strong .ruby .hljs-constant {
+    color: #008084; }
+  .dim strong .hljs-string,
+  .dim strong .hljs-tag .hljs-value,
+  .dim strong .hljs-doctag,
+  .dim strong .tex .hljs-formula {
+    color: #dd1144; }
+  .dim strong .hljs-title,
+  .dim strong .hljs-id,
+  .dim strong .scss .hljs-preprocessor {
+    color: #990000; }
+  .dim strong .hljs-class .hljs-title,
+  .dim strong .hljs-type,
+  .dim strong .vhdl .hljs-literal,
+  .dim strong .tex .hljs-command {
+    color: #445588; }
+  .dim strong .hljs-tag,
+  .dim strong .hljs-tag .hljs-title,
+  .dim strong .hljs-rule .hljs-property,
+  .dim strong .django .hljs-tag .hljs-keyword {
+    color: navy; }
+  .dim strong .hljs-attribute,
+  .dim strong .hljs-variable,
+  .dim strong .lisp .hljs-body,
+  .dim strong .hljs-name {
+    color: teal; }
+  .dim strong .hljs-regexp {
+    color: #009926; }
+  .dim strong .hljs-symbol,
+  .dim strong .ruby .hljs-symbol .hljs-string,
+  .dim strong .lisp .hljs-keyword,
+  .dim strong .clojure .hljs-keyword,
+  .dim strong .scheme .hljs-keyword,
+  .dim strong .tex .hljs-special,
+  .dim strong .hljs-prompt {
+    color: #990073; }
+  .dim strong .hljs-built_in {
+    color: #0086b3; }
+  .dim strong .hljs-preprocessor,
+  .dim strong .hljs-pragma,
+  .dim strong .hljs-pi,
+  .dim strong .hljs-doctype,
+  .dim strong .hljs-shebang,
+  .dim strong .hljs-cdata {
+    color: #999999; }
+  .dim strong .hljs-deletion {
+    background: #ffdddd; }
+  .dim strong .hljs-addition {
+    background: #ddffdd; }
+  .dim strong .diff .hljs-change {
+    background: #0086b3; }
+  .dim strong .hljs-chunk {
+    color: #aaaaaa; }

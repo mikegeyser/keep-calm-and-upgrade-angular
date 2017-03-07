@@ -1,0 +1,38 @@
+<gist>
+  <files>
+    <folder>
+      app
+      <folder>
+        directives
+        <file>meme.directive.js</file>
+      </folder>
+      <folder>
+        edit
+        <file>edit.controller.js</file>
+        <file>edit.template.html</file>
+      </folder>
+      <folder>
+        home
+        <file class="selected">home.controller.js</file>
+        <file>home.template.html</file>
+      </folder>
+      <folder>services
+        <file>memes.service.js</file>
+      </folder>
+      <file>app.js</file>
+    </folder>
+    <file>index.html</file>
+  </files>
+
+  <pre><code data-trim class="javascript">
+angular.module('lotr-meme-generator')
+.controller('HomeController', function($scope, $location, MemeService) {
+    'use strict';
+    
+    $scope.memes = MemeService.memes;
+    $scope.edit = function(id) {
+        $location.path('/edit/' + id);
+    };
+});
+    </code></pre>
+</gist>

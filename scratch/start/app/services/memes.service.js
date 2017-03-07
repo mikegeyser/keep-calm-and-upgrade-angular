@@ -9,8 +9,7 @@ angular.module("lotr-meme-generator")
             id: "and-my-axe",
             image: "and-my-axe.jpg",
             top: "And my",
-            bottom: "directive!"    
-        }, {
+            bottom: "directive!"}, {
             id: "you-have-no-power-here",
             image: "you-have-no-power-here.jpg",
             top: "Internet Explorer",

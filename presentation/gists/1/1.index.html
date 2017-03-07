@@ -1,0 +1,55 @@
+<gist>
+  <files>
+    <folder>
+      app
+      <folder>
+        directives
+        <file>meme.directive.js</file>
+      </folder>
+      <folder>
+        edit
+        <file>edit.controller.js</file>
+        <file>edit.template.html</file>
+      </folder>
+      <folder>
+        home
+        <file>home.controller.js</file>
+        <file>home.template.html</file>
+      </folder>
+      <folder>services
+        <file>memes.service.js</file>
+      </folder>
+      <file>app.js</file>
+    </folder>
+    <file class="selected">index.html</file>
+  </files>
+
+  <pre><code data-trim class="javascript" data-noescape>
+&lt;html&gt;
+  &lt;head&gt;
+      &lt;script src="node_modules/angular/angular.js"&gt;&lt;/script&gt;
+      &lt;script src="node_modules/angular-route/angular-route.js"&gt;&lt;/script&gt;
+      &lt;script src="node_modules/angular-resource/angular-resource.js"&gt;&lt;/script&gt;
+      &lt;script src="app/app.js"&gt;&lt;/script&gt;
+      &lt;script src="app/home/home.controller.js"&gt;&lt;/script&gt;
+      &lt;script src="app/edit/edit.controller.js"&gt;&lt;/script&gt;
+      &lt;script src="app/services/memes.service.js"&gt;&lt;/script&gt;
+      &lt;script src="app/directives/meme.directive.js"&gt;&lt;/script&gt;
+
+      &lt;link rel="stylesheet" href="styles.css"&gt;
+  &lt;/head&gt;
+
+  &lt;body ng-app="lotr-meme-generator"&gt;
+      &lt;h2&gt;The&lt;/h2&gt;
+      &lt;h1&gt;Lord of the Rings&lt;/h1&gt;
+      &lt;h2&gt;Meme Generator&lt;/h2&gt;
+
+      &lt;hr /&gt;
+      &lt;div class="container"&gt;
+          &lt;ng-view&gt;&lt;/ng-view&gt;
+      &lt;/div&gt;
+  &lt;/body&gt;
+&lt;/html&gt;
+
+  </code></pre>
+</gist>

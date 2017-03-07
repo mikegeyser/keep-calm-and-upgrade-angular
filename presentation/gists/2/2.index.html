@@ -1,0 +1,44 @@
+<gist>
+  <files>
+    <folder>
+      app
+      <file>app.component.ts</file>
+      <file>app.module.ts</file>
+    </folder>
+    <file class="selected">index.html</file>
+    <file>main.ts</file>
+    <file class="fragment strikethrough">systemjs.config.js</file>
+    <file class="fragment strikethrough">tsonfig.json</file>
+  </files>
+
+  <pre><code data-trim class="javascript" data-noescape>
+&lt;!DOCTYPE html&gt;
+  &lt;html&gt;
+  &lt;head&gt;
+    &lt;title&gt;Angular QuickStart&lt;/title&gt;
+    &lt;meta charset="UTF-8"&gt;
+    &lt;meta name="viewport" content="width=device-width, initial-scale=1"&gt;
+    &lt;base href="/"&gt;
+    &lt;link rel="stylesheet" href="styles.css"&gt;
+
+    &lt;!-- Polyfill(s) for older browsers --&gt;
+    &lt;script src="node_modules/core-js/client/shim.min.js"&gt;&lt;/script&gt;
+
+    &lt;script src="node_modules/zone.js/dist/zone.js"&gt;&lt;/script&gt;
+    &lt;script src="node_modules/systemjs/dist/system.src.js"&gt;&lt;/script&gt;
+
+    &lt;script src="systemjs.config.js"&gt;&lt;/script&gt;
+    &lt;script&gt;
+      System.import('main.js').catch(function(err) {
+        console.error(err);
+      });
+    &lt;/script&gt;
+  &lt;/head&gt;
+
+  &lt;body&gt;
+    &lt;my-app&gt;Loading AppComponent content here ...&lt;/my-app&gt;
+  &lt;/body&gt;
+&lt;/html&gt;
+
+  </code></pre>
+</gist>

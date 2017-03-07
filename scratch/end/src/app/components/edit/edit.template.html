@@ -1,0 +1,15 @@
+<div class="edit">
+    <div>
+        <label for="top">Top:</label>
+        <input type="text" name="top" [(ngModel)]="meme.top" />
+    </div>
+    <div>
+        <label for="top">Bottom:</label>
+        <input type="text" name="top" [(ngModel)]="meme.bottom" />
+    </div>
+    <div class="medium-meme">
+        <meme [id]="meme.id" [image]="meme.image" [top]="meme.top" [bottom]="meme.bottom" [showRefresh]="true"> </meme>
+    </div>
+
+    <button type="button" (click)="back()">Back</button>
+</div>

@@ -1,0 +1,37 @@
+<gist>
+  <files>
+    <folder>
+      app
+      <folder>
+        directives
+        <file>meme.directive.js</file>
+      </folder>
+      <folder>
+        edit
+        <file>edit.controller.js</file>
+        <file>edit.template.html</file>
+      </folder>
+      <folder>
+        home
+        <file>home.controller.js</file>
+        <file class="selected">home.template.html</file>
+      </folder>
+      <folder>services
+        <file>memes.service.js</file>
+      </folder>
+      <file>app.js</file>
+    </folder>
+    <file>index.html</file>
+  </files>
+
+  <pre><code data-trim class="html" data-noescape>
+&lt;div class="small-meme" ng-repeat="meme in memes"&gt;
+  &lt;meme id="meme.id" 
+        image="meme.image" 
+        top="meme.top" 
+        bottom="meme.bottom" 
+        ng-click="edit(meme.id)"&gt;
+  &lt;/meme&gt;
+&lt;/div&gt;
+    </code></pre>
+</gist>

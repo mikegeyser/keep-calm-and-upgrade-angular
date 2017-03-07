@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <base href="/">
+  
+  <title>Angular QuickStart</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <base href="/">
+  <link rel="stylesheet" href="styles.css">
+
+  <!-- Polyfill(s) for older browsers -->
+  <script src="node_modules/core-js/client/shim.min.js"></script>
+
+  <script src="node_modules/angular/angular.js"></script>
+  <script src="node_modules/angular-route/angular-route.js"></script>
+  <script src="node_modules/angular-resource/angular-resource.js"></script>
+
+  <script src="node_modules/zone.js/dist/zone.js"></script>
+  <script src="node_modules/systemjs/dist/system.src.js"></script>
+
+  <script src="systemjs.config.js"></script>
+  <script>
+    System.import('main.js').catch(function(err) {
+      console.error(err);
+    });
+  </script>
+</head>
+
+<body>
+  <h2>The</h2>
+  <h1>Lord of the Rings</h1>
+  <h2>Meme Generator</h2>
+
+  <hr />
+  <div class="container">
+    <my-app>Loading AppComponent content here ...</my-app>
+  </div>
+</body>
+
+</html>

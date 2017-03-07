@@ -1,0 +1,146 @@
+<!doctype html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+	<title>Keep Calm and Upgrade Angular</title>
+
+	<link rel="stylesheet" href="css/reveal.css">
+	<link rel="stylesheet" href="css/gists.css">
+	<link rel="stylesheet" href="css/theme/simple.css">
+
+	<!-- Theme used for syntax highlighting of code -->
+	<link rel="stylesheet" href="lib/css/github.min.css">
+
+	<!-- Printing and PDF exports -->
+	<script>
+		var link = document.createElement('link');
+		link.rel = 'stylesheet';
+		link.type = 'text/css';
+		link.href = window.location.search.match(/print-pdf/gi) ? 'css/print/pdf.css' : 'css/print/paper.css';
+		document.getElementsByTagName('head')[0].appendChild(link);
+	</script>
+</head>
+
+<body>
+	<div class="reveal">
+		<div class="slides">
+			<section data-background-color="#0D47A1" data-background-image="https://angular.io/resources/images/backgrounds/super-hero-large.png" data-background-size="100%" data-background-position="bottom">
+				<h1>Keep Calm</h1>
+				<h2>and</h2>
+				<h2>Upgrade Angular</h2>
+			</section>
+			<section>Slide 2</section>
+			<section>
+				<section>
+					<h2>My Precious</h2>
+					<h3>(The original angularjs app)</h3>
+				</section>
+				<section class="gist" data-markdown="gists/1/1.index.html"></section>
+				<section class="gist" data-markdown="gists/1/1.app.html"></section>
+				<section class="gist" data-markdown="gists/1/1.home.controller.html"></section>
+				<section class="gist" data-markdown="gists/1/1.home.template.html"></section>
+				<section class="gist" data-markdown="gists/1/1.memes.service.html"></section>
+				<section class="gist" data-markdown="gists/1/1.meme.directive.html"></section>
+			</section>
+			<section>
+				<section>
+					<h2>Angular Quick Start</h2>
+				</section>
+				<section class="gist" data-markdown="gists/2/getting-the-angular-quickstart.html"></section>
+				<section class="gist" data-markdown="gists/2/2.index.html"></section>
+				<section class="gist" data-markdown="gists/2/2.main.html"></section>
+				<section class="gist" data-markdown="gists/2/2.app.module.html"></section>
+				<section class="gist" data-markdown="gists/2/2.app.component.html"></section>
+			</section>
+			<section>
+				<section>
+					<h2>Reforging Andúril</h2>
+					<h3>(Running an angularjs app inside angular)</h3>
+				</section>
+				<section data-markdown="gists/2/adding-old-project-to-quickstart.html"></section>
+				<section class="gist" data-markdown="gists/2/2.updated.index.html"></section>
+				<section class="gist" data-markdown="gists/2/2.updated.main.html"></section>
+				<section class="gist" data-markdown="gists/2/2.updated.app.html"></section>
+				<section class="gist" data-markdown="gists/2/2.updated.homecontroller.html"></section>
+				<section class="gist" data-markdown="gists/2/2.updated.app.component.html"></section>
+				<section data-markdown="gists/2/show-it-working.html"></section>
+			</section>
+			<section>
+				<section>
+					<h2>Keep Calm and Upgrade Angular</h2>
+				</section>
+				<section data-markdown="gists/3/3.angular-upgrade-static.html"></section>
+				<section data-markdown="gists/3/3.upgrade-strategy.html"></section>
+				<section data-markdown="gists/3/3.upgrade-and-downgrade-strategy.html"></section>
+				<section data-markdown="gists/3/3.where-to-start.html"></section>
+				<section class="gist" data-markdown="gists/3/3.1.updated.service.html"></section>
+				<section class="gist" data-markdown="gists/3/3.1.updated.app.module.html"></section>
+				<section class="gist" data-markdown="gists/3/3.1.updated.app.html"></section>
+			</section>
+			<section>
+				<section>
+					<h2>The Prime Directive</h2>
+				</section>
+				<section data-markdown="gists/3/3.2.upgrading-the-directive.html"></section>
+				<section class="gist" data-markdown="gists/3/3.2.updated.directive.html"></section>
+				<section data-markdown="gists/3/3.2.pick-a-direction.html"></section>
+				<section class="gist" data-markdown="gists/3/3.2.updated.directive-take-2.html"></section>
+			</section>
+			<section>
+				<section>
+					<h2>Upgrade components</h2>
+				</section>
+				<section class="gist" data-markdown="gists/4/4.edit.controller.html"></section>				
+				<section class="gist" data-markdown="gists/4/4.edit.component.html"></section>				
+				<section class="gist" data-markdown="gists/4/4.edit.component-2.html"></section>				
+				<section class="gist" data-markdown="gists/4/4.edit.template.html"></section>				
+				<section class="gist" data-markdown="gists/4/4.edit.template-2.html"></section>				
+			</section>
+			<section>
+				<section>
+					<h2>Split router</h2>
+				</section>
+				<section class="gist" data-markdown="gists/5/5.router.module.html"></section>
+				
+			</section>
+			<section>
+				<section>
+					<h2>Summary</h2>
+				</section>
+			</section>
+		</div>
+	</div>
+
+	<img id="bbd-logo" src="lib/images/bbd.png" />
+
+	<script src="lib/js/head.min.js"></script>
+	<script src="js/reveal.js"></script>
+
+	<script>
+		// More info https://github.com/hakimel/reveal.js#configuration
+		Reveal.initialize({
+			history: true,
+
+			// More info https://github.com/hakimel/reveal.js#dependencies
+			dependencies: [{
+				src: 'plugin/markdown/marked.js'
+			}, {
+				src: 'plugin/markdown/markdown.js'
+			}, {
+				src: 'plugin/notes/notes.js',
+				async: true
+			}, {
+				src: 'plugin/highlight/highlight.js',
+				async: true,
+				callback: function() {
+					hljs.initHighlightingOnLoad();
+				}
+			}]
+		});
+	</script>
+</body>
+
+</html>

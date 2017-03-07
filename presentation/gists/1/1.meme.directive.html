@@ -1,0 +1,84 @@
+<gist>
+  <files>
+    <folder>
+      app
+      <folder>
+        directives
+        <file class="selected">meme.directive.js</file>
+      </folder>
+      <folder>
+        edit
+        <file>edit.controller.js</file>
+        <file>edit.template.html</file>
+      </folder>
+      <folder>
+        home
+        <file>home.controller.js</file>
+        <file>home.template.html</file>
+      </folder>
+      <folder>services
+        <file>memes.service.js</file>
+      </folder>
+      <file>app.js</file>
+    </folder>
+    <file>index.html</file>
+  </files>
+
+  <pre><code data-trim class="javascript">
+angular.module('lotr-meme-generator')
+.directive("meme", function() {
+	return {
+		restrict: "E",
+		scope: {
+			id: '=',
+			image: '=',
+			top: '=',
+			bottom: '=',
+			showRefresh: '@'
+		},
+
+		link: function(scope, element, attributes) {
+			var a = attributes;
+      
+      element.append('<canvas></canvas>');
+			var canvas = element.find("canvas")[0];
+			var context = canvas.getContext("2d");
+
+			var draw = function() {
+				context.canvas.width = image.width;
+				context.canvas.height = image.height;
+				context.drawImage(image, 0, 0);
+
+				context.font = "100px Arial";
+				context.fillStyle = 'white';
+				context.strokeStyle = 'black';
+				context.lineWidth = 4;
+				context.textAlign = 'center';
+
+				// Write top line 
+				if (scope.top) {
+					context.fillText(scope.top.toUpperCase(), context.canvas.width / 2, 90, context.canvas.width - 10);
+					context.strokeText(scope.top.toUpperCase(), context.canvas.width / 2, 90, context.canvas.width - 10);
+				}
+
+				// Write bottom line 
+				if (scope.bottom) {
+					context.fillText(scope.bottom.toUpperCase(), context.canvas.width / 2, context.canvas.height - 10, context.canvas.width - 10);
+					context.strokeText(scope.bottom.toUpperCase(), context.canvas.width / 2, context.canvas.height - 10, context.canvas.width - 10);
+				}
+			};
+
+			var image = new Image();
+			image.onload = draw;
+			image.src = "assets/images/" + scope.image;
+
+			if (scope.showRefresh){
+				element.append('<button type="button">Refresh</button>')
+				var button = element.find("button")[0];
+				button.onclick= draw;
+			}
+		}
+	};
+});
+    </code></pre>
+</gist>
