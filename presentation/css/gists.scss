@@ -4,6 +4,128 @@
     left: 30px;
 }
 
+#title {
+    h1, h2, h3, h4 {
+        margin:0;
+        letter-spacing: 0.1em;
+    }
+}
+.reveal .hobbiton {
+    font-family: hobbiton, Arial;      
+
+    h2, h3 {
+        text-align: center;
+        font-family: hobbiton, Arial;      
+    }
+
+    h2 {
+        font-size: 3em;
+        margin-top: 0em;
+        margin-bottom: 0em;
+    }
+}
+/* introduction */
+#introduction {
+    position: relative;
+    width: 960px;
+    height: 700px;
+}
+#mike {
+    background: url(../lib/images/mike.png) no-repeat;
+    width: 200px;
+    height: 200px;
+    background-size: contain;
+    margin: auto;
+}
+
+#bbd {
+    position:absolute;
+    left: 0px;
+    bottom: 50px;
+    background: url(../lib/images/bbd-full.png) no-repeat;
+    width: 400px;
+    height: 200px;
+    background-size: contain;
+}
+
+#geocities {
+    position:absolute;
+    left: 100px;
+    bottom: 300px;
+    background: url(../lib/images/geocities.png) no-repeat;
+    width: 200px;
+    height: 237px;
+    background-size: contain;
+}
+
+#languages {
+    position:absolute;
+    right: 50px;
+    top: 200px;
+    background: url(../lib/images/languages.png) no-repeat;
+    width: 348px;
+    height: 214px;
+    background-size: contain;
+}
+
+#love-js {
+    position:absolute;
+    right: 50px;
+    top: 310px;
+    background: url(../lib/images/love-js.png) no-repeat;
+    width: 348px;
+    height: 139px;
+    background-size: contain;
+    transform: rotate(-25deg);
+}
+
+#programmer-beard {
+    position: absolute;
+    top: 122px;
+    background: url(../lib/images/beard.png) no-repeat;
+    width: 164px;
+    height: 150px;
+    background-size: contain;
+    right: 0;
+    left: 0;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#frameworks {
+    position:absolute;
+    right: 135px;
+    bottom: 75px;
+    background: url(../lib/images/frameworks.png) no-repeat;
+    width: 400px;
+    height: 200px;
+    background-size: contain;
+}
+/* end introduction */
+
+/* questions */
+#twitter, #github, #bbd-email {
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+}
+#twitter {
+    background: url(../lib/images/twitter.png) no-repeat;
+    margin: 0 5px -7px 0;
+    background-size: contain;
+}
+#github {
+    background: url(../lib/images/github.png) no-repeat;
+    margin: 0 5px -1px 0;
+    background-size: contain;
+}
+#bbd-email {
+    background: url(../lib/images/bbd.png) no-repeat;
+    margin: 0 5px -3px 0;
+    background-size: contain;
+}
+/* end questions */
+
 .reveal {
     section.gist {
         width: 960px;
@@ -21,7 +143,7 @@
             width: 230px;
 
             file {
-                font-size: 1vw;
+                font-size: 0.9vw;
                 display: block;
                 text-align: left;
                 padding: 0 10px;
@@ -36,7 +158,7 @@
         }
 
         folder {
-            font-size: 1vw;
+            font-size: 0.9vw;
             text-align: left;            
             display: block;
             padding-left: 20px;

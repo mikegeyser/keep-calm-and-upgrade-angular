@@ -1,0 +1,72 @@
+<gist>
+    <files>
+        <folder>
+            app
+            <folder>
+                old
+                <folder>
+                    home
+                    <file>home.controller.ts</file>
+                    <file>home.template.html</file>
+                </folder>
+                <file>app.ts</file>
+            </folder>
+            <folder>
+                components
+                <folder>
+                    edit
+                    <file>edit.component.ts</file>
+                    <file>edit.template.html</file>
+                </folder>
+            </folder>
+            <folder>
+                directives
+                <file>meme.directive.ts</file>
+            </folder>
+            <folder>services
+                <file>memes.service.ts</file>
+            </folder>
+            <file>app.component.ts</file>
+            <file class="selected">app.module.ts</file>
+            <file>routing.module.ts</file>
+        </folder>
+        <file>index.html</file>
+        <file>main.ts</file>
+    </files>
+
+    <pre><code data-trim class="javascript dim" data-noescape>
+import { NgModule } from '@angular/core';
+import { BrowserModule } from '@angular/platform-browser';
+import { UpgradeModule } from '@angular/upgrade/static';
+import { HashLocationStrategy, LocationStrategy } from '@angular/common';
+import { RouterModule, Routes, UrlHandlingStrategy } from '@angular/router';
+
+import { AppComponent } from './app.component';
+**import { AppRoutingModule } from './routing.module';**
+import { EditComponent } from './components/edit/edit.component';
+import { MemeComponent } from './directives/meme.directive';
+import { MemeService } from './services/memes.service';
+
+@NgModule({
+  imports: [
+    BrowserModule,
+    UpgradeModule,
+    **AppRoutingModule,**
+    **RouterModule.forRoot([])**
+  ],
+  declarations: [
+    AppComponent,
+    EditComponent,
+    MemeComponent
+  ],
+  entryComponents: [MemeComponent],
+  bootstrap: [AppComponent],
+  providers: [
+    MemeService,
+  ]
+})
+export class AppModule {
+  constructor(public upgrade: UpgradeModule) { }
+}
+  </code></pre>
+</gist>

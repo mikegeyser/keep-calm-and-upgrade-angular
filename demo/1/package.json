@@ -1,0 +1,19 @@
+{
+  "name": "lotr-meme-generator",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "lite-server src/"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "angular": "^1.6.2",
+    "angular-route": "^ 1.6.2",
+    "angular-resource": "^1.6.2"
+  },
+  "devDependencies": {
+    "lite-server": "^2.2.2"
+  }
+}
