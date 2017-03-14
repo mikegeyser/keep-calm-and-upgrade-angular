@@ -1,3 +1,8 @@
+@font-face {
+  font-family: 'Hobbiton';
+  src: url('hobitton.woff');
+}
+
 #bbd-logo {
     position: absolute;
     bottom: 30px;
@@ -11,11 +16,11 @@
     }
 }
 .reveal .hobbiton {
-    font-family: hobbiton, Arial;      
+    font-family: 'Hobbiton', Arial;      
 
     h2, h3 {
         text-align: center;
-        font-family: hobbiton, Arial;      
+        font-family: 'Hobbiton', Arial;      
     }
 
     h2 {
